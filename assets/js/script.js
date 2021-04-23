@@ -10,6 +10,7 @@ function validaOpiniao(){
         txtOpiniao.innerHTML = "O comentário é muito pequeno, digite no minimo 20 caracteres "
         txtOpiniao.style.color = "red"
         txtOpiniao.style.display = "block"
+        opiniaoOk = false
     }else{
         txtOpiniao.style.display = "none"
         opiniaoOk =true
@@ -22,6 +23,7 @@ function validaEmail() {
     if(email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1) {
         txtEmail.innerHTML = "E-mail inválido"
         txtEmail.style.color = "red"
+        emailOk = false
     } else {
         txtEmail.style.display = "none"
         emailOk = true
