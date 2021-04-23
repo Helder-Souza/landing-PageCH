@@ -34,13 +34,7 @@ function enviar() {
         window.location.href = 'index.html'
     } else if(emailOk == false) {
         alert ("Preencha o campo de E-mail corretamente antes de enviar !!")
-        window.setTimeout(()=>{
-            document.querySelector("#email").focus()
-        },0)
     } else {
         alert ("Preencha o campo de comentário corretamente antes de enviar !!")
-        window.setTimeout(()=>{
-            document.querySelector('#opiniao').focus()
-        },0)
     }
 }
